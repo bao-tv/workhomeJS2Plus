@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  </head>
+  <body>
+    <section class="exercise1 py-5">
+        <div class="container">
+            <h3>Bài 1: Chương trỉnh tìm ngày tháng năm.</h3>
+            <p class="d-inline">Nhập vào ngày: </p>
+            <input type="text" id="day">
+            <p class="d-inline">Nhập vào tháng: </p>
+            <input type="text" id="month">
+            <p class="d-inline">Nhập vào năm:</p>
+            <input type="text" id="year">
+            <button onclick="ex1()" class="btn btn-primary mt-2" id="calDay">Tính ngày</button>
+            <div class="mt-2">
+                <span>Ngày tiếp theo là: <span id="nextDay"></span> ngày</span>
+                <span class="d-block">Ngày trước đó là: <span id="lastDay"></span> ngày</span>
+            </div>
+        </div>
+    </section>
+    <!-- bài 2 -->
+    <section class="exercise2 py-5">
+        <div class="container">
+            <h3>Bài 2: Tính số ngày trong tháng.</h3>
+            <p class="d-inline">Nhập vào tháng: </p>
+            <input type="text" id="month2">
+            <p class="d-inline">Nhập vào năm:</p>
+            <input type="text" id="year2">
+            <button onclick="ex2()" class="btn btn-primary mt-2" id="calDayInMonth">Tính số ngày trong tháng</button>
+            <div class="mt-2">
+                <span>Số ngày trong tháng là: <span id="numDayInMonth2"></span> ngày</span>
+            </div>
+        </div>
+    </section>
+    <!-- bài 3 -->
+    <section class="exercise3 py-5">
+        <div class="container">
+            <h3>Bài 3: Nhập vào số nguyên có 3 chữ số và in ra cách đọc.</h3>
+            <p class="d-inline">Nhập vào số nguyên có 3 chữ số </p>
+            <input type="text" id="num">
+            <button onclick="ex3()" class="btn btn-primary mt-2" id="readNum">Cách đọc số</button>
+            <div class="mt-2">
+                <span>Cách đọc số nguyên là: <span id="resultB3"></span></span>
+            </div>
+        </div>
+    </section>
+
+    <!-- bài 4 -->
+    <section class="exercise4 py-5">
+        <div class="container">
+            <h3>Bài 4: Tìm sinh viên đến trường xa nhất.</h3>
+            <div class="row">
+                <div class="col-3">
+                    <div class="student-info">
+                        <p>Nhập vào tên sinh viên 1: </p>
+                        <input type="text" id="name1">
+                        <p>Tung độ X nhà sinh viên 1: </p>
+                        <input type="text" id="x1">
+                        <p>Hoành độ Y nhà sinh viên 1: </p>
+                        <input type="text" id="y1">
+                    </div>
+                </div>
+                <div class="col-3">
+                    <div class="student-info">
+                        <p>Nhập vào tên sinh viên 2: </p>
+                        <input type="text" id="name2">
+                        <p>Tung độ X nhà sinh viên 2: </p>
+                        <input type="text" id="x2">
+                        <p>Hoành độ Y nhà sinh viên 2: </p>
+                        <input type="text" id="y2">
+                    </div>
+                </div>
+                <div class="col-3">
+                    <div class="student-info">
+                        <p>Nhập vào tên sinh viên 3: </p>
+                        <input type="text" id="name3">
+                        <p>Tung độ X nhà sinh viên 3: </p>
+                        <input type="text" id="x3">
+                        <p>Hoành độ Y nhà sinh viên 3: </p>
+                        <input type="text" id="y3">
+                    </div>
+                </div>
+                <div class="col-3">
+                    <div class="student-info">
+                        <p>Tung độ X của trường: </p>
+                        <input type="text" id="xT">
+                        <p>Hoành độ Y của trường: </p>
+                        <input type="text" id="yT">
+                    </div>
+                </div>
+            </div>
+            <button onclick="ex4()" class="btn btn-primary mt-2" id="find">Tìm nhà xa trường nhất</button>
+            <div class="mt-2">
+                <span id="resultB4"></span>
+            </div>
+        </div>
+    </section>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="./main.js"></script>
+  </body>
+</html>
